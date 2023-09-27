@@ -1,0 +1,191 @@
+body {
+    margin: 0px;
+    background-color: #212D40;
+    color: #E9F1F7;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    box-shadow: 10px 0px 10px black;
+    background-color: #364156;
+    height: 10vh;
+    position: sticky;
+    top: 0px;
+}
+
+.navbarContent {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 0 12rem 0 12rem;
+}
+
+.left, .center, .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: calc(995px/12);
+    height: calc(350px/12);
+}
+
+.navbar a {
+    font-weight: 350;
+    text-decoration: none;
+    color: #E9F1F7;
+    display: unset;
+    margin: 0 5rem 0 5rem;
+    white-space: nowrap;
+}
+
+a:hover {
+    text-shadow: 0 0 3px #E9F1F7;
+}
+
+.search {
+    position: absolute;
+    right: 2vw;
+}
+
+#flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+.fa-magnifying-glass:hover {
+    cursor: pointer;
+}
+
+h1 {
+    padding-left: 5vw;
+    font-weight: 400;
+}
+
+.productWidget {
+    margin-left: 5vw;
+    border-radius: 5px;
+    padding-right: 1rem;
+    background-color: #364156;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin-bottom: 2.5rem;
+}
+
+.inset {
+    margin-left: calc(5vw + 300px);
+}
+
+.product {
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 2rem;
+}
+
+.productDesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.textWrapper {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+p {
+    max-width: 25rem;
+}
+
+.productDescBottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+button {
+    padding: 1rem;
+    color: white;
+    background-color: #212D40;
+    border: 2px solid white;
+    border-radius: .5rem;
+    margin-right: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+i {
+    margin-right: .5rem ;
+}
+
+input {
+    display: none;
+}
+
+footer {
+    height: 10vh;
+    background-color:#364156;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding-right: 1rem;
+}
+
+#center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#right {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+}
+
+.fa-brands {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+i:hover {
+    cursor: pointer;
+    text-shadow: 0 0 3px #E9F1F7;
+}
+
+a {
+    text-decoration: none;
+    color: #E9F1F7;
+}
+
+.cartWidget {
+    display: flex;
+    margin-left: 5rem;
+    background-color: #364156;
+    padding-right: 1rem;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.cartWidget .product {
+    width: 250px;
+    height: 150px;
+}
+
+h4 {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
